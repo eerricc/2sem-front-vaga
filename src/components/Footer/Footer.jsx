@@ -8,11 +8,11 @@ const Footer = () => {
   return (
     <footer className='bg-[#96305A] mt-auto'>
       <div className='flex justify-center p-5'>
-        <img src={insta} alt="" />
-        <img src={twitter} alt="" />
-        <img src={face} alt="" />
+        <img src={insta} alt="" className='m-5'/>
+        <img src={twitter} alt="" className='m-5'/>
+        <img src={face} alt="" className='m-5'/>
       </div>
-      <h6 className='text-center'>@copyright</h6>
+      <h6 className='text-center font-bold text-white'>@copyright</h6>
     </footer>
   )
 }
