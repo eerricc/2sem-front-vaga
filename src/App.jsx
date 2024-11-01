@@ -7,7 +7,7 @@ import React from 'react'
 
 const App = () => {
   return (
-    <div className="flex-col">
+    <div className="flex-col min-h-screen w-full">
       <Header/>
       <Outlet/>
       <Footer/>
