@@ -10,7 +10,7 @@ const Header = () => {
         <nav className="w-[20%]">
           <ul className="flex justify-between text-[#FF9FC5] font-bold">
             <li><Link to='/'>Home</Link></li>
-            <li><Link>Produtos</Link></li>
+            <li><Link to='/products'>Produtos</Link></li>
             <li><Link to='/login' className="bg-white rounded-full py-4 px-6">Login</Link></li>
           </ul>
         </nav>
