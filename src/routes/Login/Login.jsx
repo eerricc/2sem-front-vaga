@@ -67,6 +67,11 @@ const Login = () => {
                 </form>
                 <img src={logo} alt="" className='rounded-xl'/>
             </section>
+            <ul className="">
+              <li className=''>
+                <Link to="/registration" className=''>Create an account</Link>
+              </li>
+            </ul>
         </section>
     </div>
   )
