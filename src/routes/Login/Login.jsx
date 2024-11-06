@@ -33,7 +33,7 @@ const Login = () => {
               Math.random().toString(16).substring(2)
               sessionStorage.setItem("user", user.current.value);
               sessionStorage.setItem("password", token);
-              navigate("/produtos")      
+              navigate("/products")      
       }else{
           alert("user/password invalid")
       }
@@ -59,10 +59,24 @@ const Login = () => {
             <h1 className='text-center font-bold'>Login</h1>
             <section className='flex justify-between'>
                 <form action="" className='w-1/2 ml-20 flex flex-col justify-center' onSubmit={handleSubmit}>
-                    <label htmlFor="" className='font-bold'>User</label><input type="text" className='p-2 rounded-md' ref={user}/>
+                    <label htmlFor="" className='font-bold'>User</label>
+                    
+                    <input 
+                     type="text"
+                     id="user"
+                     className='p-2 rounded-md'
+                     ref={user}/>
+                    
                     <br />
-                    <label htmlFor="" className='font-bold'>Senha</label><input type="password" className='p-2 rounded-md' ref={password}/>
+                    <label htmlFor="" className='font-bold'>Senha</label>
+                    
+                    <input 
+                     type="password"
+                     id="password" 
+                     className='p-2 rounded-md' 
+                     ref={password}/>
                     <br />
+                    
                     <button type='submit' className='bg-[#602540] w-1/2 self-center p-2 rounded-xl text-white font-bold'>Entrar</button>
                 </form>
                 <img src={logo} alt="" className='rounded-xl'/>
